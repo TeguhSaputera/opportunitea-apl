@@ -1,0 +1,199 @@
+.kotak-1 {
+  position: fixed;
+  background-size: cover;
+  width: 400px;
+  height: 270px;
+  bottom: 0;
+  right: 350px;
+
+  @include media-breakpoint-down(xl) {
+    right: 300px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    right: 270px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 300px;
+    height: 170px;
+    right: 50px;
+  }
+}
+
+.kotak-2 {
+  position: fixed;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  bottom: 0;
+  right: 0;
+
+  @include media-breakpoint-down(md) {
+    width: 250px;
+    height: 350px;
+    bottom: 80px;
+    right: -130px;
+  }
+}
+
+.kotak-3 {
+  position: fixed;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  bottom: 400px;
+  right: 0;
+
+  @include media-breakpoint-down(md) {
+    width: 80px;
+    height: 80px;
+    bottom: 340px;
+    right: 0px;
+  }
+}
+
+.detail-judul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.card-profile {
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  .frime-profile {
+    margin-top: 40px;
+    width: 200px;
+    background-color: #b1bb1b;
+    height: 200px;
+    border-radius: 50%;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .img-profile {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .table-profile {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    tr {
+      td {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .point {
+    margin-bottom: 50px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .detail-point {
+      font-size: 14px;
+
+      h5 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.card-order-history {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  .order-history {
+    margin: 30px 20px;
+    h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .table-order {
+      th {
+        background-color: #81d8fa;
+      }
+      tr:nth-child(even) {
+        background-color: #81d8fa;
+      }
+      .status {
+        margin: auto;
+
+        .status-aktif {
+          width: 20px;
+          height: 20px;
+          background-color: #31ee60;
+          border-radius: 50%;
+        }
+
+        .success {
+          width: 20px;
+          height: 20px;
+          background-color: #038ce7;
+          border-radius: 50%;
+        }
+
+        .proses {
+          width: 20px;
+          height: 20px;
+          background-color: #fff024;
+          border-radius: 50%;
+        }
+
+        .status-tidak-aktif {
+          width: 20px;
+          height: 20px;
+          background-color: #ee3131;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.card-qr-code {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  .qr-code {
+    margin: 30px 20px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+}
